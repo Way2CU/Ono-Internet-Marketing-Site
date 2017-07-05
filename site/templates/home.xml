@@ -8,7 +8,36 @@
 		</head>
 
 		<body>
-			<h1>תוכנית ההכשרה למקצועני פרסום בגוגל ובפייסבוק</h1>
+			<!-- Header -->
+			<cms:template file="stock/header_generic.xml" >
+				<param name="fixed" value=""/>
+				<param name="menu" value="parts/menu_items.xml"/>
+				<param name="logo" value="logo.svg"/>
+			</cms:template>
+
+			<!-- Section header -->
+			<section id="header">
+				<!-- Main article -->
+				<cms:module
+					name="articles"
+					action="show"
+					group="header_articles"
+					text_id="header_article"
+					template="parts/article_custom_template.xml"
+					/>
+
+				<!-- Clouds -->
+				<span class="cloud"></span>
+				<span class="cloud"></span>
+				<span class="cloud"></span>
+				<span class="cloud"></span>
+
+				<!-- Baloons -->
+				<span class="baloon"></span>
+				<span class="baloon"></span>
+				<span class="baloon"></span>
+				<span class="baloon"></span>
+			</section>
 		</body>
 	</html>
 </document>

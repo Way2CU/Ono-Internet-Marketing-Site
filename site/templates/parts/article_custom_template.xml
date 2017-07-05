@@ -1,0 +1,16 @@
+<document>
+	<article>
+
+		<span><h1><cms:var param="title" multilanguage="yes"/></h1></span>
+		<cms:markdown param="content" multilanguage="yes"/>
+
+		<!-- Custom links -->
+		<a href="#details">
+			<cms:text constant="i_want_details"/>
+		</a>
+
+		<a href="#download">
+			<cms:text constant="download_syllabus"/>
+		</a>
+	</article>
+</document>

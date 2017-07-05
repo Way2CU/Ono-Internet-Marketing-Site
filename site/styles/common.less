@@ -16,3 +16,18 @@
 @paragraph_spacing: 1rem;
 @button_padding: 0.5rem 1rem;
 @input_padding: 0.5rem;
+
+
+.green_style(@display) {
+	display: @display;
+	background-color: @color_green;
+	color: @color_white;
+	border: 2px solid @color_white;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: lighten(@color_green, 10%);
+	}
+}
