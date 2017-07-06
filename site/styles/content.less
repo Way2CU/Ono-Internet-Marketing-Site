@@ -176,3 +176,110 @@ section#header span.billboard#outbrain {
 	bottom: 140px;
 	left: calc(~'50% - 600px');
 }
+
+
+/**
+ * Section about
+ */
+
+section.about {
+	padding: 0 calc(~'(100% - 1200px)' / 2);
+	background-color: @color_text_dark;
+	color: white;
+	min-height: 700px;
+
+	background-image: url(../images/clouds_top.svg);
+	background-repeat: no-repeat;
+	background-size: 1920px 245px;
+	background-position: center bottom;
+
+	article {
+		text-align: center;
+
+		h1 {
+			margin: 0;
+			padding-bottom: 0.5em;
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 50px;
+				height: 1px;
+				background-color: @color_white;
+			}
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 2em 0;
+		list-style: none;
+
+		li {
+			display: inline-block;
+			vertical-align: middle;
+			width: 20%;
+			text-align: center;
+
+			svg {
+				display: block;
+				margin: 0 auto;
+				width: 2em;
+				height: 2em;
+				padding-bottom: 1em;
+				fill: @color_white;
+			}
+		}
+	}
+
+	a {
+		.green_style(inline-block);
+		margin: 1em;
+	}
+}
+
+
+/**
+ * Section field
+ */
+
+section.field {
+	padding: 0 calc(~'(100% - 1200px)' / 2);
+	text-align: center;
+
+	div.gallery:first-of-type h2 {
+		color: @color_green;
+		position: relative;
+		margin: 0;
+		padding-bottom: 1em;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 1.5em;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100px;
+			height: 2px;
+			background-color: @color_green;
+		}
+	}
+
+	div.gallery a {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 1em;
+		border: 1px solid fade(@color_text, 50%);
+
+		img {
+			margin: 0;
+			display: block;
+		}
+	}
+
+	div.gallery:last-of-type {
+		padding-top: 2em;
+	}
+}
