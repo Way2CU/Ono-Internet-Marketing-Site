@@ -1,7 +1,8 @@
 <document>
 	<article>
-
-		<span><h1><cms:var param="title" multilanguage="yes"/></h1></span>
+		<cms:if condition="isset($template['title'])">
+ 		<span><h1><cms:var param="title" multilanguage="yes"/></h1></span>
+		</cms:if>
 		<cms:markdown param="content" multilanguage="yes"/>
 
 		<!-- Custom links -->

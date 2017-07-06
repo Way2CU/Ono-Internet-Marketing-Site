@@ -1,0 +1,13 @@
+<document>
+	<cms:markdown param="description" multilanguage="yes"/>
+
+	<cms:module
+		name="gallery"
+		action="show_image_list"
+		group_id="$params['id']"
+		template="stock/image_generic.xml"
+		cms:eval="group_id"
+		>
+		<param name="thumbnail_size" value="350px"/>
+	</cms:module>
+</document>
