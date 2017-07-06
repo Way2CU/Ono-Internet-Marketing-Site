@@ -33,10 +33,15 @@
 				<span class="cloud"></span>
 
 				<!-- Baloons -->
-				<span class="baloon"></span>
-				<span class="baloon"></span>
-				<span class="baloon"></span>
-				<span class="baloon"></span>
+				<span class="baloon" id="wordpress"></span>
+				<span class="baloon" id="social"></span>
+				<span class="baloon" id="webdev"></span>
+
+				<!-- Billboards -->
+				<span class="billboard" id="youtube"></span>
+				<span class="billboard" id="analytics"></span>
+				<span class="billboard" id="taboola"></span>
+				<span class="billboard" id="outbrain"></span>
 			</section>
 		</body>
 	</html>

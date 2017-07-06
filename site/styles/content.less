@@ -8,7 +8,7 @@
 
 section#header {
 	background: url(../images/header.svg), linear-gradient(180deg, #8cc0e8, @color_white);
-	background-size: 100% auto;
+	background-size: 1920px 1058px;
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	min-height: 1000px;
@@ -85,17 +85,17 @@ section#header span.cloud {
 	}
 
 	&:nth-of-type(3) {
-		width: 200px;
+		width: 150px;
 		height: 150px;
 		top: 2em;
-		left: 200px;
+		left: 150px;
 	}
 
 	&:nth-of-type(4) {
 		width: 200px;
 		height: 150px;
 		bottom: 400px;
-		left: 1em;
+		left: 100px;
 	}
 
 }
@@ -105,13 +105,74 @@ section#header span.cloud {
  * Header baloon
  */
 section#header span.baloon {
-	background-image: url(../images/code.svg);
 	background-size: 100% auto;
 	background-position: center;
 	background-repeat: no-repeat;
+	width: 200px;
+	height: 270px;
+	position: absolute;
+}
 
+section#header span#wordpress {
+	background-image: url(../images/balloons/wordpress.svg);
+	top: 250px;
+	right: 2em;
+}
+
+section#header span#social {
+	background-image: url(../images/balloons/social.svg);
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 320px;
+	height: 230px;
+}
+
+section#header span#webdev {
+	background-image: url(../images/balloons/code.svg);
+	top: 80px;
+	left: 1em;
+}
+
+
+
+/**
+ * Header billboards
+ */
+
+section#header span.billboard {
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+}
+
+section#header span.billboard#youtube {
+	background-image: url(../images/billboards/youtube.svg);
+	bottom: 30%;
+	right: calc(~'50% - 590px');
+	height: 140px;
+}
+
+section#header span.billboard#analytics {
+	background-image: url(../images/billboards/analytics.svg);
+	bottom: 96px;
+	right: calc(~'50% - 320px');
+	width: 300px;
+	height: 300px;
+}
+
+section#header span.billboard#taboola {
+	background-image: url(../images/billboards/taboola.svg);
+	bottom: 160px;
 	width: 100px;
 	height: 100px;
+	left: calc(~'50% - 208px');
+}
 
-	position: absolute;
+section#header span.billboard#outbrain {
+	background-image: url(../images/billboards/outbrain.svg);
+	bottom: 140px;
+	left: calc(~'50% - 600px');
 }
