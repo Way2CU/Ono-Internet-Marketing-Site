@@ -24,7 +24,9 @@
 					group="header_articles"
 					text_id="header_article"
 					template="parts/article_custom_template.xml"
-					/>
+					>
+					<param name="title" value=""/>
+				</cms:module>
 
 				<!-- Clouds -->
 				<span class="cloud"></span>
@@ -42,6 +44,66 @@
 				<span class="billboard" id="analytics"></span>
 				<span class="billboard" id="taboola"></span>
 				<span class="billboard" id="outbrain"></span>
+			</section>
+
+			<!-- Section about -->
+			<section class="about">
+				<cms:module
+					name="articles"
+					action="show"
+					group="about_articles"
+					text_id="about_main"
+					template="stock/article_generic.xml"
+					>
+					<param name="title" value=""/>
+					<param name="title_tag" value="h2"/>
+				</cms:module>
+
+				<!-- Features -->
+				<ul>
+					<cms:module
+						name="articles"
+						action="show_list"
+						group="about_features"
+						template="stock/features_generic.xml"
+						>
+						<param name="title" value=""/>
+						<param name="sprite" value="site_sprite.svg"/>
+					</cms:module>
+				</ul>
+
+				<!-- About bottom article -->
+					<cms:module
+						name="articles"
+						action="show"
+						group="about_articles"
+						text_id="about_main_bottom"
+						template="parts/article_custom_template.xml"
+						/>
+			</section>
+
+			<section class="field">
+				<!-- Calclist gallery group -->
+				<div class="gallery">
+					<cms:module
+						name="gallery"
+						action="show_group"
+						text_id="calcalist_gallery"
+						template="parts/group_gallery_template.xml"
+						/>
+				</div>
+
+				<!-- Inc gallery group -->
+				<div class="gallery">
+					<cms:module
+						name="gallery"
+						action="show_group"
+						text_id="inc_gallery"
+						template="parts/group_gallery_template.xml"
+						>
+						<param name="bigThumb" value=""/>
+					</cms:module>
+				</div>
 			</section>
 		</body>
 	</html>
