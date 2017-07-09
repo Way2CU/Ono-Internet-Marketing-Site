@@ -35,19 +35,19 @@
 				<span class="cloud"></span>
 
 				<!-- Baloons -->
-				<span class="baloon" id="wordpress"></span>
-				<span class="baloon" id="social"></span>
-				<span class="baloon" id="webdev"></span>
+				<span class="baloon wordpress"></span>
+				<span class="baloon social"></span>
+				<span class="baloon webdev"></span>
 
 				<!-- Billboards -->
-				<span class="billboard" id="youtube"></span>
-				<span class="billboard" id="analytics"></span>
-				<span class="billboard" id="taboola"></span>
-				<span class="billboard" id="outbrain"></span>
+				<span class="billboard youtube"></span>
+				<span class="billboard analytics"></span>
+				<span class="billboard taboola"></span>
+				<span class="billboard outbrain"></span>
 			</section>
 
 			<!-- Section about -->
-			<section class="about">
+			<section id="about">
 				<cms:module
 					name="articles"
 					action="show"
@@ -82,7 +82,7 @@
 						/>
 			</section>
 
-			<section class="field">
+			<section id="field">
 				<!-- Calclist gallery group -->
 				<div class="gallery">
 					<cms:module
@@ -90,7 +90,9 @@
 						action="show_group"
 						text_id="calcalist_gallery"
 						template="parts/group_gallery_template.xml"
-						/>
+						>
+						<param name="thumbnail_size" value="350"/>
+					</cms:module>
 				</div>
 
 				<!-- Inc gallery group -->
@@ -101,9 +103,179 @@
 						text_id="inc_gallery"
 						template="parts/group_gallery_template.xml"
 						>
-						<param name="bigThumb" value=""/>
+						<param name="thumbnail_size" value="600"/>
 					</cms:module>
 				</div>
+			</section>
+
+			<!-- section what we learn -->
+			<section id="course_about">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="course_about"
+					group="course_about"
+					template="stock/article_generic.xml"
+					>
+					<param name="title" value=""/>
+					<param name="title_tag" value="h2"/>
+				</cms:module>
+			</section>
+
+			<!-- Main subjects -->
+			<section id="main_subjects">
+				<h2><cms:text constant="main_subjects"/></h2>
+				<ul>
+					<cms:module
+						name="articles"
+						action="show_list"
+						group="main_subjects"
+						template="stock/features_generic.xml"
+						>
+						<param name="title" value=""/>
+						<param name="sprite" value="subjects_icons.svg"/>
+					</cms:module>
+				</ul>
+				<!-- Custom links -->
+				<a href="#details">
+					<cms:text constant="i_want_details"/>
+				</a>
+
+				<a href="#download">
+					<cms:text constant="download_syllabus"/>
+				</a>
+			</section>
+
+			<!-- Section how it all connects -->
+			<section id="how_it_all_connects">
+				<cms:module
+					name="articles"
+					action="show"
+					group="how_it_all_connects"
+					text_id="how_it_all_connects"
+					template="stock/article_generic.xml"
+					>
+					<param name="title" value=""/>
+					<param name="title_tag" value="h2"/>
+				</cms:module>
+			</section>
+
+			<!-- Section What to do after -->
+			<section id="what_you_do_after">
+				<cms:module
+					name="articles"
+					action="show"
+					group="what_you_do_after"
+					text_id="what_you_do_after"
+					template="parts/article_custom_template.xml"
+					>
+					<param name="title" value=""/>
+				</cms:module>
+			</section>
+
+			<!-- Why us -->
+			<section id="why_us">
+				<h2><cms:text constant="why_we_better"/></h2>
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="why_us_gallery"
+						order_by="text_id"
+						template="stock/image_generic.xml"
+						>
+						<param name="title" value=""/>
+						<param name="description" value=""/>
+						<param name="thumbnail_size" value="300"/>
+					</cms:module>
+			</section>
+
+			<!-- Tutors -->
+			<section id="tutors">
+				<h2><cms:text constant="tutors"/></h2>
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="tutors"
+						template="stock/image_generic.xml"
+						>
+						<param name="title" value=""/>
+						<param name="description" value=""/>
+						<param name="thumbnail_size" value="300"/>
+					</cms:module>
+			</section>
+
+			<!-- Information -->
+			<section id="information">
+				<h2><cms:text constant="when_its_all_hapening"/></h2>
+				<ul>
+					<cms:module
+						name="articles"
+						action="show_list"
+						group="information_features"
+						template="stock/features_generic.xml"
+						>
+						<param name="title" value=""/>
+						<param name="sprite" value="site_sprite.svg"/>
+					</cms:module>
+				</ul>
+
+				<!-- Bottom article -->
+				<cms:module
+					name="articles"
+					action="show"
+					group="information_article"
+					text_id="information_article"
+					template="stock/article_generic.xml"
+					>
+					<param name="title" value=""/>
+					<param name="title_tag" value="h2"/>
+				</cms:module>
+			</section>
+
+			<!-- QualiMatch -->
+			<section id="qualimatch">
+				<!-- article -->
+				<cms:module
+					name="articles"
+					action="show"
+					group="qualimatch"
+					text_id="qualimatch"
+					template="stock/article_generic.xml"
+					/>
+				<!-- gallery -->
+				<cms:module
+					name="gallery"
+					action="show_image"
+					group="qualimatch"
+					template="stock/image_generic.xml"
+					>
+					<param name="thumbnail_size" value="600"/>
+				</cms:module>
+			</section>
+
+			<!-- Footer -->
+			<section id="footer">
+				<!-- Main article -->
+				<cms:module
+					name="articles"
+					action="show"
+					group="footer_articles"
+					text_id="footer_article"
+					template="parts/article_custom_template.xml"
+					>
+					<param name="title" value=""/>
+				</cms:module>
+
+				<!-- Baloons -->
+				<span class="baloon wordpress"></span>
+				<span class="baloon social"></span>
+				<span class="baloon webdev"></span>
+
+				<!-- Billboards -->
+				<span class="billboard youtube"></span>
+				<span class="billboard analytics"></span>
+				<span class="billboard taboola"></span>
+				<span class="billboard outbrain"></span>
 			</section>
 		</body>
 	</html>

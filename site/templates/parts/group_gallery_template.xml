@@ -8,9 +8,6 @@
 		template="stock/image_generic.xml"
 		cms:eval="group_id"
 		>
-		<cms:if condition="isset($template['bigThumb'])">
-			<param name="thumbnail_size" value="600px"/>
-		</cms:if>
-		<param name="thumbnail_size" value="350px"/>
+		<cms:transfer template="thumbnail_size" />
 	</cms:module>
 </document>
