@@ -690,3 +690,71 @@ section#footer {
 #footer span.billboard.youtube {
 	bottom: 297px;
 }
+
+/*
+ * Tablet
+*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	section#footer,
+	section#header {
+		background-size: 1400px 700px, 100% auto;
+		min-height: 980px;
+	}
+
+	section#footer article span,
+	section#header article span {
+		width: 90%;
+	}
+
+	span.baloon.wordpress {
+		right: 0;
+		width: 100px;
+		height: 150px;
+	}
+
+	span.billboard.outbrain {
+		left: 100px;
+		bottom: 90px;
+		width: 100px;
+		height: 100px;
+	}
+
+	span.billboard.taboola {
+		bottom: 60px;
+	}
+
+	span.billboard.analytics {
+		width: 200px;
+		height: 220px;
+		right: calc(~'(50% - 205px)');
+		bottom: 59px;
+	}
+
+	span.billboard.youtube {
+		width: 150px;
+		height: 140px;
+		right: calc(~'(50% - 395px)');
+		bottom: 190px;
+	}
+
+	section#about {
+		min-height: 650px;
+	}
+
+	section#field div.gallery a {
+		margin: 1em;
+	}
+
+	section#how_it_all_connects,
+	section#tutors {
+		padding: 2em 1em;
+	}
+
+	#footer span.billboard.youtube {
+		bottom: 187px;
+	}
+
+	#footer span.baloon.webdev {
+		bottom: 60%;
+	}
+}
