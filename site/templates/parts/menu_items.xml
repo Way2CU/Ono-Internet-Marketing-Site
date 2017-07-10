@@ -1,21 +1,21 @@
 <document>
 	<!-- about_the_course -->
-	<a href="#">
+	<a href="#about">
 		<cms:text constant="about_the_course"/>
 	</a>
 
 	<!-- what_we_learn -->
-	<a href="#">
+	<a href="#field">
 		<cms:text constant="what_we_learn"/>
 	</a>
 
 	<!-- what_we_do -->
-	<a href="#">
+	<a href="#course_about">
 		<cms:text constant="what_we_do"/>
 	</a>
 
 	<!-- why_us -->
-	<a href="#">
+	<a href="#why_us">
 		<cms:text constant="why_us"/>
 	</a>
 
