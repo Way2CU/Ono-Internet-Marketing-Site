@@ -12,6 +12,8 @@
 			<cms:template file="stock/header_generic.xml" >
 				<param name="fixed" value=""/>
 				<param name="menu" value="parts/menu_items.xml"/>
+				<param name="mobile_menu_sprite_icon" value="icon-menu"/>
+				<param name="sprite" value="site_sprite.svg"/>
 				<param name="logo" value="logo.svg"/>
 			</cms:template>
 
@@ -29,8 +31,6 @@
 				</cms:module>
 
 				<!-- Clouds -->
-				<span class="cloud"></span>
-				<span class="cloud"></span>
 				<span class="cloud"></span>
 				<span class="cloud"></span>
 
@@ -277,6 +277,14 @@
 				<span class="billboard taboola"></span>
 				<span class="billboard outbrain"></span>
 			</section>
+			<footer>
+				<!-- Copyright -->
+				<cms:template file="stock/copyright.xml">
+					<param name="holder" value="copyright_holder"/>
+					<param name="text" value="copyright_text"/>
+					<param name="light" value=""/>
+				</cms:template>
+			</footer>
 		</body>
 	</html>
 </document>

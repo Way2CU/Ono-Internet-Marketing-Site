@@ -1,0 +1,53 @@
+/**
+ * Header_Mobile Style Sheet
+ * Ono-Internet-Marketing
+ *
+ * Copyright (c) 2017. by Way2CU, http://way2cu.com
+ * Authors: Iliya Melishev
+ */
+
+header {
+	padding: 0.5em;
+	text-align: center;
+	background-color: @color_white;
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+
+	a.menu {
+		float: right;
+		padding: 0.5em;
+
+		svg {
+			display: block;
+			width: 2em;
+			height: 2em;
+		}
+	}
+
+	a.logo {
+		display: inline-block;
+		vertical-align: middle;
+		width: 30%;
+	}
+}
+
+div.mobile_menu {
+	width: 100%;
+	top: 71px;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 1em 2em;
+	height: 100%;
+
+	a {
+		display: block;
+		text-decoration: none;
+		color: @color_text;
+		padding: 1em 0;
+		border-bottom: 1px solid @color_text;
+		font-size: 1.2em;
+	}
+
+	&.active {
+		width: 100%;
+	}
+}
