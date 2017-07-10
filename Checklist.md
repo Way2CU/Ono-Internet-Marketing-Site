@@ -8,7 +8,7 @@ All of these need to be checked manually, changed and then committed. System wil
 	- [ ] SVG images are cleaned and optimized;
 	- [ ] Make sure site scores 95+ on Page Speed Insights (ideally 100);
 - Site specific items:
-	- [] `system_init.xml` file contains all the modules used;
+	- [ ] `system_init.xml` file contains all the modules used;
 	- [ ] Deployment script `group_vars/all` file is configured;
 	- [ ] Deployment `hosts.txt` file is configured;
 	- [x] All the languages site is targeting are configured in `config.php`;
