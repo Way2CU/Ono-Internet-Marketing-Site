@@ -8,8 +8,6 @@
 		</head>
 
 		<body>
-			<cms:svg file="site_sprite.svg"/>
-			<cms:svg file="subjects_icons.svg"/>
 			<!-- Header -->
 			<cms:template file="stock/header_generic.xml" >
 				<param name="fixed" value=""/>
@@ -33,6 +31,8 @@
 				</cms:module>
 
 				<!-- Clouds -->
+				<span class="cloud"></span>
+				<span class="cloud"></span>
 				<span class="cloud"></span>
 				<span class="cloud"></span>
 
