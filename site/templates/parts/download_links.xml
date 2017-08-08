@@ -1,0 +1,15 @@
+<document>
+	<a
+		href="$params['url']"
+		cms:eval="href"
+		>
+		<cms:text constant="i_want_details"/>
+	</a>
+
+	<a
+		href="$params['url']"
+		cms:eval="href"
+		>
+		<cms:text constant="download_syllabus"/>
+	</a>
+</document>

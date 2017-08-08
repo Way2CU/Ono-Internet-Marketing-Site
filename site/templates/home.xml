@@ -139,13 +139,11 @@
 					</cms:module>
 				</ul>
 				<!-- Custom links -->
-				<a href="#details">
-					<cms:text constant="i_want_details"/>
-				</a>
-
-				<a href="#download">
-					<cms:text constant="download_syllabus"/>
-				</a>
+				<cms:module
+					name="downloads"
+					action="show"
+					template="parts/download_links.xml"
+					/>
 			</section>
 
 			<section id="for_who">
@@ -213,11 +211,12 @@
 						name="gallery"
 						action="show_image_list"
 						group="tutors"
+						order_by="text_id"
 						template="stock/image_generic.xml"
 						>
 						<param name="title" value=""/>
 						<param name="description" value=""/>
-						<param name="thumbnail_size" value="300"/>
+						<param name="thumbnail_size" value="200"/>
 					</cms:module>
 			</section>
 
@@ -262,7 +261,7 @@
 				<!-- gallery -->
 				<cms:module
 					name="gallery"
-					action="show_image"
+					action="show_image_list"
 					group="qualimatch"
 					template="stock/image_generic.xml"
 					>

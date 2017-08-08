@@ -187,7 +187,7 @@ span.billboard.outbrain {
  */
 
 section#about {
-	padding: 0 calc(~'(100% - 1200px)' / 2);
+	padding: @section_spacing calc(~'(100% - 1200px)' / 2);
 	background-color: @color_text_dark;
 	color: white;
 	min-height: 700px;
@@ -250,7 +250,7 @@ section#about {
  */
 
 section#field {
-	padding: 0 calc(~'(100% - 1200px)' / 2);
+	padding: @section_spacing calc(~'(100% - 1200px)' / 2);
 	text-align: center;
 	padding-bottom: 1em;
 
@@ -442,7 +442,7 @@ section#for_who ul {
  * Section#how it all connects
  */
 section#how_it_all_connects {
-	padding: 2em calc(~'(100% - 1200px)' / 2);
+	padding: @section_spacing calc(~'(100% - 1200px)' / 2);
 	color: @color_white;
 	background-color: @color_green;
 
@@ -477,7 +477,7 @@ section#how_it_all_connects {
  */
 
 section#what_you_do_after {
-	padding: 2em calc(~'(100% - 600px)' / 2);
+	padding: @section_spacing calc(~'(100% - 600px)' / 2);
 	text-align: center;
 
 	h1 {
@@ -521,7 +521,7 @@ section#what_you_do_after {
  * sectoin why_us
  */
 section#why_us {
-	padding: 2em calc(~'(100% - 1200px)' / 2);
+	padding: @section_spacing calc(~'(100% - 1200px)' / 2);
 
 	background-image: url(../images/texture.png);
 	background-position: center;
@@ -574,7 +574,7 @@ section#why_us {
  * sectoin tutors
  */
 section#tutors {
-	padding: 2em calc(~'(100% - 1200px)' / 2);
+	padding: @section_spacing calc(~'(100% - 1200px)' / 2);
 
 	h2 {
 		color: @color_green;
@@ -599,7 +599,7 @@ section#tutors {
 	a {
 		display: inline-block;
 		vertical-align: top;
-		width: 290px;
+		width: 33%;
 		text-decoration: none;
 		color: @color_text;
 		pointer-events: none;
@@ -608,11 +608,14 @@ section#tutors {
 		img {
 			display: block;
 			margin: 0 auto;
+			height: 140px;
+			border: 1px solid @color_green;
 		}
 
 		h4 {
 			margin: 0;
 			padding: 0.5em 0;
+			font-weight: 400;
 		}
 	}
 }
@@ -622,7 +625,7 @@ section#tutors {
  */
 
 section#information {
-	padding: 100px calc(~'(100% - 1200px)' / 2);
+	padding: @section_spacing calc(~'(100% - 1200px)' / 2);
 	background-image: url(../images/when_where.jpg);
 	background-repeat: no-repeat;
 
@@ -702,12 +705,31 @@ section#information article {
  * Section qualimatch
  */
 section#qualimatch {
-	padding: 2em calc(~'(100% - 600px)' / 2);
+	padding: @section_spacing calc(~'(100% - 1200px)' / 2);
+
 	article {
 		padding-bottom: 1em;
 		text-align: center;
 		box-sizing: border-box;
-		padding: 0 1em;
+		width: 35%;
+		display: block;
+		margin: 0 auto;
+		color: @color_text_dark;
+		font-weight: 700;
+	}
+
+	& a:nth-of-type(1) img {
+		display: block;
+		margin: 0 auto;
+		border: 1px solid @color_text_dark;
+	}	
+
+	& a:nth-of-type(2) img {
+		width: 350px;
+		display: block;
+		margin: 0 auto;
+		margin-top: 3rem; 
+		border: 1px solid @color_text_dark;
 	}
 }
 
@@ -723,7 +745,8 @@ section#footer {
 	background-position: center bottom, center top, center bottom;
 	background-repeat: no-repeat;
 	min-height: 1000px;
-	padding-top: 200px;
+	padding: @section_spacing calc(~'(100% - 1200px)' / 2);
+
 
 	article {
 		color: @color_white;
