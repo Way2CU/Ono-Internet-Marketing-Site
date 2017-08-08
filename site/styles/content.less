@@ -3,7 +3,7 @@
  * Ono-Internet-Marketing
  *
  * Copyright (c) 2017. by Way2CU, http://way2cu.com
- * Authors: Iliya Melishev
+ * Authors: Iliya Melishev, Vladimir Anusic
  */
 
 body {
@@ -325,7 +325,7 @@ section#course_about {
  */
 
 section#main_subjects {
-	padding: 0 calc(~'(100% - 1200px)' / 2);
+	padding: @section_spacing calc(~'(100% - 1200px)' / 2);
 	text-align: center;
 
 	h2 {
@@ -386,11 +386,63 @@ section#main_subjects a {
 }
 
 /**
+*	Section for who
+*/
+
+section#for_who {
+	padding: @section_spacing calc(~'(100% - 1200px)' / 2);
+	position: relative;
+	background-image: url(../images/for_who.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+	& h1 {
+		color: @color_green;
+	}
+}
+
+section#for_who hr {
+	width: 100px;
+	border: 1px solid @color_green;
+	height: 0;
+	position: absolute;
+}
+
+section#for_who ul {
+	display: block;
+	margin: 0;
+	margin-top: 3rem;
+	padding: 0;
+	list-style-type: none;
+
+	& li {
+		display: block;
+		
+		& svg {
+			width: 2em;
+			height: 2em;
+			display: inline-block;
+			padding-right: 1em;
+			fill: @color_green;
+
+			html[dir=rtl] & {
+				padding-right: 0;
+				padding-left: 1em;
+			}
+		}
+
+		& p {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}
+
+/**
  * Section#how it all connects
  */
 section#how_it_all_connects {
 	padding: 2em calc(~'(100% - 1200px)' / 2);
-	margin: 2em 0;
 	color: @color_white;
 	background-color: @color_green;
 

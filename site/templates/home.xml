@@ -148,6 +148,21 @@
 				</a>
 			</section>
 
+			<section id="for_who">
+				<h1><cms:text constant="for_who"/></h1>
+				<hr />
+				<ul>
+					<cms:module
+						name="articles"
+						action="show_list"
+						group="for_who"
+						template="stock/features_generic.xml"
+						>
+						<param name="sprite" value="site_sprite.svg"/>
+					</cms:module>
+				</ul>
+			</section>
+
 			<!-- Section how it all connects -->
 			<section id="how_it_all_connects">
 				<cms:module
