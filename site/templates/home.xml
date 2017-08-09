@@ -263,6 +263,7 @@
 					name="gallery"
 					action="show_image_list"
 					group="qualimatch"
+					order_by="text_id"
 					template="stock/image_generic.xml"
 					>
 					<param name="thumbnail_size" value="600"/>
