@@ -1,31 +1,25 @@
 <document>
-	<!-- about_the_course -->
 	<a href="#about">
 		<cms:text constant="about_the_course"/>
 	</a>
 
-	<!-- what_we_learn -->
-	<a href="#field">
+	<a href="#main_subjects">
 		<cms:text constant="what_we_learn"/>
 	</a>
 
-	<!-- what_we_do -->
-	<a href="#course_about">
-		<cms:text constant="what_we_do"/>
+	<a href="#for_who">
+		<cms:text constant="whom_it_fits"/>
 	</a>
 
-	<!-- why_us -->
 	<a href="#why_us">
 		<cms:text constant="why_us"/>
 	</a>
 
-	<!-- tutors -->
-	<a href="#">
+	<a href="#tutors">
 		<cms:text constant="tutors"/>
 	</a>
 
-	<!-- when_and_where -->
-	<a href="#">
+	<a href="#information">
 		<cms:text constant="when_and_where"/>
 	</a>
 
