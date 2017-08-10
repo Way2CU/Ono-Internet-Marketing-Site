@@ -6,13 +6,17 @@
     "why_us": "למה אצלנו?",
     "tutors": "המרצים",
     "when_and_where": "מתי ואיפה?",
-    "i_want_details": "אני רוצה פרטים",
-    "download_syllabus": "להורדת סילבוס מלא",
     "main_subjects": "נושאי הלימוד המרכזיים:",
     "for_who": "‫‫למי‬ ‫זה‬ ‫מתאים‬ ?",
     "why_we_better": "למה אצלנו? במה אנחנו יותר טובים?",
     "tutors": "המרצים בקורס",
     "when_its_all_hapening": "מתי כל זה קורה?",
     "copyright_holder": "Copyright &copy; 2017. by <a href=\"http://way2cu.com\" target=\"_blank\">Way2CU</a>.",
-    "copyright_text": "All rights reserved."
+    "copyright_text": "All rights reserved.",
+    "download_details": "אני רוצה פרטים",
+    "contact_form_details": "לקבלת מידע מיועץ לימודים על מסלול ההכשרה",
+    "contact_form_button_details": "כן. אני רוצה מידע נוסף",
+    "download_syllabus": "להורדת סילבוס מלא",
+    "contact_form_syllabus": "לקבלת תוכנית הלימודים באופן אוטומטי למייל",
+    "contact_form_button_syllabus": "כן. שלחו לי את תוכנית הלימודים"
 }
