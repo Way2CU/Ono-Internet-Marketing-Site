@@ -30,7 +30,11 @@
 	</a>
 
 	<!-- i_want_details -->
-	<a href="#">
-		<cms:text constant="i_want_details"/>
-	</a>
+	<cms:module
+		name="downloads"
+		action="show"
+		template="parts/download.xml"
+		>
+		<param name="constant" value="i_want_details"/>
+	</cms:module>
 </document>

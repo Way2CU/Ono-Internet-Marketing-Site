@@ -1,0 +1,11 @@
+<document>
+	<!-- Show download link with customized text -->
+	<a
+		href="javascript:void()"
+		data-download="$params['url']"
+		class="download"
+		cms:eval="data-download"
+		>
+		<cms:text constant="$template['text']" cms:eval="constant"/>
+	</a>
+</document>

@@ -75,13 +75,13 @@
 				</ul>
 
 				<!-- About bottom article -->
-					<cms:module
-						name="articles"
-						action="show"
-						group="about_articles"
-						text_id="about_main_bottom"
-						template="parts/article_custom_template.xml"
-						/>
+				<cms:module
+					name="articles"
+					action="show"
+					group="about_articles"
+					text_id="about_main_bottom"
+					template="parts/article_custom_template.xml"
+					/>
 			</section>
 
 			<section id="field">
@@ -138,12 +138,22 @@
 						<param name="sprite" value="subjects_icons.svg"/>
 					</cms:module>
 				</ul>
+
 				<!-- Custom links -->
 				<cms:module
 					name="downloads"
 					action="show"
-					template="parts/download_links.xml"
-					/>
+					template="parts/download.xml"
+					>
+					<param name="constant" value="i_want_details"/>
+				</cms:module>
+				<cms:module
+					name="downloads"
+					action="show"
+					template="parts/download.xml"
+					>
+					<param name="constant" value="download_syllabus"/>
+				</cms:module>
 			</section>
 
 			<section id="for_who">
@@ -191,33 +201,33 @@
 			<!-- Why us -->
 			<section id="why_us">
 				<h2><cms:text constant="why_we_better"/></h2>
-					<cms:module
-						name="gallery"
-						action="show_image_list"
-						group="why_us_gallery"
-						order_by="text_id"
-						template="stock/image_generic.xml"
-						>
-						<param name="title" value=""/>
-						<param name="description" value=""/>
-						<param name="thumbnail_size" value="300"/>
-					</cms:module>
+				<cms:module
+					name="gallery"
+					action="show_image_list"
+					group="why_us_gallery"
+					order_by="text_id"
+					template="stock/image_generic.xml"
+					>
+					<param name="title" value=""/>
+					<param name="description" value=""/>
+					<param name="thumbnail_size" value="300"/>
+				</cms:module>
 			</section>
 
 			<!-- Tutors -->
 			<section id="tutors">
 				<h2><cms:text constant="tutors"/></h2>
-					<cms:module
-						name="gallery"
-						action="show_image_list"
-						group="tutors"
-						order_by="text_id"
-						template="stock/image_generic.xml"
-						>
-						<param name="title" value=""/>
-						<param name="description" value=""/>
-						<param name="thumbnail_size" value="200"/>
-					</cms:module>
+				<cms:module
+					name="gallery"
+					action="show_image_list"
+					group="tutors"
+					order_by="text_id"
+					template="stock/image_generic.xml"
+					>
+					<param name="title" value=""/>
+					<param name="description" value=""/>
+					<param name="thumbnail_size" value="200"/>
+				</cms:module>
 			</section>
 
 			<!-- Information -->
@@ -294,6 +304,7 @@
 				<span class="billboard taboola"></span>
 				<span class="billboard outbrain"></span>
 			</section>
+
 			<footer>
 				<!-- Copyright -->
 				<cms:template file="stock/copyright.xml">
