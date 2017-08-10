@@ -145,13 +145,17 @@
 					action="show"
 					template="parts/download.xml"
 					>
-					<param name="constant" value="i_want_details"/>
+					<param name="title" value="contact_form_details"/>
+					<param name="button" value="contact_form_button_details"/>
+					<param name="constant" value="download_details"/>
 				</cms:module>
 				<cms:module
 					name="downloads"
 					action="show"
 					template="parts/download.xml"
 					>
+					<param name="title" value="contact_form_syllabus"/>
+					<param name="button" value="contact_form_button_syllabus"/>
 					<param name="constant" value="download_syllabus"/>
 				</cms:module>
 			</section>
@@ -304,6 +308,15 @@
 				<span class="billboard taboola"></span>
 				<span class="billboard outbrain"></span>
 			</section>
+
+			<!-- Hidden contact form displayed in dialog before syllabus download -->
+			<div id="contact_form">
+				<cms:module
+					name="contact_form"
+					action="show"
+					text_id="contact_form"
+					/>
+			</div>
 
 			<footer>
 				<!-- Copyright -->

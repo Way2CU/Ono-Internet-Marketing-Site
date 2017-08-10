@@ -35,6 +35,8 @@
 		action="show"
 		template="parts/download.xml"
 		>
-		<param name="constant" value="i_want_details"/>
+		<param name="constant" value="download_details"/>
+		<param name="button" value="contact_form_button_details"/>
+		<param name="constant" value="download_details"/>
 	</cms:module>
 </document>

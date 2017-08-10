@@ -3,8 +3,10 @@
 	<a
 		href="javascript:void()"
 		data-download="$params['url']"
+		data-title="Language::get_text($template['title'])"
+		data-button="Language::get_text($template['button'])"
 		class="download"
-		cms:eval="data-download"
+		cms:eval="data-download,data-title,data-button"
 		>
 		<cms:text constant="$template['text']" cms:eval="constant"/>
 	</a>
