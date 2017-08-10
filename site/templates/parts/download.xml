@@ -1,13 +1,13 @@
 <document>
 	<!-- Show download link with customized text -->
 	<a
-		href="javascript:void()"
+		class="download"
+		href="javascript:void(0)"
 		data-download="$params['url']"
 		data-title="Language::get_text($template['title'])"
 		data-button="Language::get_text($template['button'])"
-		class="download"
 		cms:eval="data-download,data-title,data-button"
 		>
-		<cms:text constant="$template['text']" cms:eval="constant"/>
+		<cms:text constant="$template['constant']" cms:eval="constant"/>
 	</a>
 </document>
