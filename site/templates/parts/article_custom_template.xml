@@ -1,7 +1,7 @@
 <document>
 	<article>
 		<cms:if condition="isset($template['title'])">
- 			<span><h1><cms:var param="title" multilanguage="yes"/></h1></span>
+			<span><h1><cms:var param="title" multilanguage="yes"/></h1></span>
 		</cms:if>
 		<cms:markdown param="content" multilanguage="yes"/>
 
@@ -9,7 +9,20 @@
 		<cms:module
 			name="downloads"
 			action="show"
-			template="parts/download_links.xml"
-			/>
+			template="parts/download.xml"
+			>
+			<param name="title" value="contact_form_details"/>
+			<param name="button" value="contact_form_button_details"/>
+			<param name="constant" value="download_details"/>
+		</cms:module>
+		<cms:module
+			name="downloads"
+			action="show"
+			template="parts/download.xml"
+			>
+			<param name="title" value="contact_form_syllabus"/>
+			<param name="button" value="contact_form_button_syllabus"/>
+			<param name="constant" value="download_syllabus"/>
+		</cms:module>
 	</article>
 </document>
