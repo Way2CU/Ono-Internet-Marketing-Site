@@ -1,6 +1,6 @@
 # Ono-Internet-Marketing-Site
 
-Langing page for ono internet marketing
+Landing page for ono internet marketing
 
 ## License
 

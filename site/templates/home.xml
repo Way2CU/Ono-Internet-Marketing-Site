@@ -83,7 +83,7 @@
 					template="parts/article_custom_template.xml"
 					/>
 			</section>
-
+			
 			<section id="field">
 				<!-- Calclist gallery group -->
 				<div class="gallery">
