@@ -105,8 +105,8 @@ section#header span.cloud {
 
 
 /**
- *  baloons
- */
+*  baloons
+*/
 span.baloon {
 	background-size: 100% auto;
 	background-position: center;
@@ -386,8 +386,8 @@ section#main_subjects a {
 }
 
 /**
-*	Section for who
-*/
+ *	Section for who
+ */
 
 section#for_who {
 	padding: @section_spacing calc(~'(100% - 1200px)' / 2);
@@ -417,7 +417,7 @@ section#for_who ul {
 
 	& li {
 		display: block;
-		
+
 		& svg {
 			width: 2em;
 			height: 2em;
@@ -759,7 +759,7 @@ section#footer {
 
 #footer span.baloon.wordpress {
 	bottom: 610px;
-    right: 50px;	
+	right: 50px;	
 }
 
 #footer span.baloon.webdev {
@@ -772,7 +772,7 @@ section#footer {
 
 /*
  * Tablet
-*/
+ */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 	section#footer,
 	section#header {
@@ -844,4 +844,41 @@ div.copyright {
 	color: white;
 	text-align: center;
 	background-position: calc(~'(50% - 120px)') center;
+}
+
+/**
+ * Contact form
+ */
+div#contact_form {
+	display: none;
+
+	// show form once embedded in to dialog
+	div.dialog & {
+		display: block;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 0.3rem;
+
+		span {
+			display: block;
+		}
+
+		input {
+			padding: @input_padding;
+			border: 1px solid darken(@color_white, 60);
+			background-color: @color_white;
+
+			color: @color_text;
+
+			&:focus {
+				border-color: @color_green;
+			}
+
+			&:invalid {
+				border-color: red;
+			}
+		}
+	}
 }

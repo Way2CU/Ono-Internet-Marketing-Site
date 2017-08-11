@@ -67,7 +67,7 @@ Site.handle_download_click = function(event) {
 
 	// configure dialog
 	Site.form_dialog.set_title(event.target.dataset.title);
-	Site.submit_button.innerHtml = event.target.dataset.button;
+	Site.submit_button.innerHTML = event.target.dataset.button;
 
 	// show contact form
 	Site.form_dialog.open();
