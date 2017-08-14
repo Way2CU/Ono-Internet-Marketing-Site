@@ -760,3 +760,66 @@ div.copyright {
 	text-align: center;
 	background-position: calc(~'(50% - 100px)') center;
 }
+
+/**
+*	Dialog Form
+*/
+
+div.dialog {
+	margin-top: 5.5rem;
+	color: white;
+	width: 300px;
+}
+
+div.dialog div.title {
+	background-color: @color_green;
+}
+
+div#contact_form form {
+	background-color: fade(@color_black, 80%);
+	display: block;
+	margin: 0 auto;
+	padding: 1rem;
+	text-align: center;
+}
+
+div#contact_form form label {
+	display: block;
+	box-sizing: border-box;
+	margin-bottom: 0.5rem;
+}
+
+div#contact_form form label input {
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 0.7em 1em;
+	width: 80%;
+	border: 1px solid grey;
+
+	&:active {
+		border: 1px solid @color_green;
+	}
+
+}
+
+div#contact_form form label span {
+	display: inline-block;
+	width: 20%;
+	text-align: left;
+
+	html[dir=rtl] & {
+		text-align: right;
+	}
+}
+
+div.dialog div.command_bar a {
+	margin-bottom: 1rem;
+
+	&:nth-of-type(2) {
+		background-color: @color_green;
+
+		&:active {
+			background-color: lighten(@color_green, 10%);
+		}
+	}
+}
