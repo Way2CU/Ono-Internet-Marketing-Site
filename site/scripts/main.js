@@ -106,6 +106,7 @@ Site.on_load = function() {
 	// create dialog for contact form
 	Site.submit_button = document.createElement('a');
 	Site.submit_button.addEventListener('click', Site.handle_submit_click);
+	Site.submit_button.href = 'javascript: void(0);';
 
 	Site.form_dialog = new Caracal.Dialog();
 	Site.form_dialog
