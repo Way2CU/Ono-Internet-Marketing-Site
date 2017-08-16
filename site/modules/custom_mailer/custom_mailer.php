@@ -27,7 +27,7 @@ class custom_mailer extends Module {
 		$mailer = new Mailer();
 
 		// register new mailer
-		$contact_form = contact_from::get_instance();
+		$contact_form = contact_form::get_instance();
 		$contact_form->registerMailer('custom', $mailer);
 	}
 
