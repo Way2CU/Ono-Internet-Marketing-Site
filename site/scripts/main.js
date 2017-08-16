@@ -78,9 +78,17 @@ Site.handle_download_click = function(event) {
  * @param object response_data
  */
 Site.handle_submit_success = function(response_data) {
-	// make sure no server side errors occurred
 	if (!data.error)
+		return;
+
+	// send analytics event
+	window.dataLayer = window.dataLayer || new Object();
+	window.dataLayer.push({'event': 'leadSent'});
+
+	// make sure no server side errors occurred
+	setTimeout(function() {
 		window.location = Site.download_url;
+	}, 1000);
 };
 
 /**
