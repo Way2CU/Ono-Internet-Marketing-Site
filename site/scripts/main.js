@@ -89,6 +89,8 @@ Site.handle_submit_success = function(data) {
 	setTimeout(function() {
 		window.location = Site.download_url;
 	}, 1000);
+
+	return true;
 };
 
 /**
