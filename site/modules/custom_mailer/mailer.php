@@ -50,6 +50,8 @@ class Mailer extends ContactForm_Mailer {
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		$response = curl_exec($ch);
+
+		return true;
 	}
 
 	/**
