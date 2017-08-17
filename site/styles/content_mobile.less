@@ -385,7 +385,7 @@ section#for_who {
 					padding-left: 1rem;
 				}
 			}
-			
+
 			& p {
 				display: inline-block;
 				width: 80%;
@@ -775,8 +775,20 @@ div.dialog div.title {
 	background-color: @color_green;
 }
 
-div#contact_form form {
+div.inner_content {
 	background-color: fade(@color_black, 80%);
+}
+
+div#contact_form {
+	display: none;
+
+	// show form once embedded in to dialog
+	div.dialog & {
+		display: block;
+	}
+}
+
+div#contact_form form {
 	display: block;
 	margin: 0 auto;
 	padding: 1rem;
@@ -786,7 +798,7 @@ div#contact_form form {
 div#contact_form form label {
 	display: block;
 	box-sizing: border-box;
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 div#contact_form form label input {
