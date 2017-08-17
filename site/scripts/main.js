@@ -77,10 +77,20 @@ Site.handle_download_click = function(event) {
  * Handle successful data submision.
  * @param object response_data
  */
-Site.handle_submit_success = function(response_data) {
+Site.handle_submit_success = function(data) {
+	if (data.error)
+		return;
+
+	// send analytics event
+	window.dataLayer = window.dataLayer || new Array();
+	window.dataLayer.push({'event': 'leadSent'});
+
 	// make sure no server side errors occurred
-	if (!data.error)
+	setTimeout(function() {
 		window.location = Site.download_url;
+	}, 1000);
+
+	return true;
 };
 
 /**
@@ -105,11 +115,12 @@ Site.on_load = function() {
 
 	// connect download links with dialog
 	var links = document.querySelectorAll('a.download');
-	for (var i=0,count=links.length; i<count; i++)
+	for (var i=0, count=links.length; i<count; i++)
 		links[i].addEventListener('click', Site.handle_download_click);
 
 	// connect form successful submision to download handler
-	Caracal.ContactForm.list[0].events.connect('submit-success', Site.handle_submit_success);
+	for (var index in Caracal.ContactForm.list)
+		Caracal.ContactForm.list[index].events.connect('submit-success', Site.handle_submit_success);
 };
 
 

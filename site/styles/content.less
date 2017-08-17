@@ -876,7 +876,7 @@ div#contact_form {
 				border-color: @color_green;
 			}
 
-			&:invalid {
+			&:not(:empty):invalid {
 				border-color: red;
 			}
 		}
