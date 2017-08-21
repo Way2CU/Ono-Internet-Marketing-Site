@@ -34,7 +34,7 @@ class Mailer extends ContactForm_Mailer {
 	 */
 	public function send() {
 		$post_data = array(
-			'sourceSite' => 'מיניסייט שיווק דיגיטלי',
+			'sourceSite' => 'DigitalMarketing',
 			'sourceID'   => '[מספר רץ שלכם של הליד]',
 			'sourceType' => time() . rand(1, 100),
 			'interest'   => 'שיוק דיגיטלי',
