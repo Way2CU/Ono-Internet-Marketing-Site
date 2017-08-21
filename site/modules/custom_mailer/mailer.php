@@ -36,11 +36,17 @@ class Mailer extends ContactForm_Mailer {
 		$post_data = array(
 			'sourceSite' => 'מיניסייט שיווק דיגיטלי',
 			'sourceID'   => '[מספר רץ שלכם של הליד]',
-			'sourceType' => '64',
+			'sourceType' => time() . rand(1, 100),
 			'interest'   => 'שיוק דיגיטלי',
 		);
 
 		$post_data = array_merge($post_data, $this->variables);
+		$post_data['mobile'] = $post_data['phone'];
+
+		// split name
+		$name = explode(' ', $post_data['name'], 2);
+		$post_data['firstName'] = $name[0];
+		$post_data['lastName'] = isset($name[1]) ? $name[1] : '';
 
 		$url = 'https://yedion.ono.ac.il/yedion/FireflyWeb.aspx?prgname=Leads';
 		$ch = curl_init();
